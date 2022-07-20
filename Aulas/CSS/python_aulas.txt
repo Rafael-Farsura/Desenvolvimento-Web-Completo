@@ -1,0 +1,362 @@
+#Comando print()
+#comentário simples # e comentário multiplas linhas """ """
+#variavel x = 5
+
+#casting str, int, float
+# varX = str(3)
+# varY = int(3)
+# varZ = float(3.1)
+# print(type(varX))
+# print(type(varY))
+# print(type(varZ))
+
+#multiplas variaveis
+# varX, varY, varZ = "Variavel X","Variavel Y","Variavel Z"
+# print(varX)
+# print(varY)
+# print(varZ)
+
+#atribuir o mesmo valor para varias variaveis
+# x = y = z = "Variavel X"
+# print(x)
+# print(y)
+# print(z)
+
+#Saida Output
+# x = "Python"
+# y = "é"
+# z = "muito legal de estudar"
+# print(x, y, z)
+#-----------------------------
+# x = "Python "
+# y = "é "
+# z = "muito legal de estudar"
+# print(x + y + z)
+
+# x = 5
+# y = "Variavel Y"
+#
+# print(x, y)
+
+
+#Variavel Global
+# x = "awesome"
+# def myfunc():
+#   print("Python is " + x)
+# myfunc()
+
+#--------------------
+# x = "awesome"
+# def myfunc():
+#   x = "fantastic"
+#   print("Python is " + x)
+# myfunc()
+# print("Python is " + x)
+
+#Tipos de dados
+"""
+***Text Type:	str
+***Numeric Types:	int, float, complex
+***Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+***Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+"""
+
+
+#Exercicios
+"""
+01- Você deve imprimir a mensagem "Hello World!
+02- Imprima a mensagem "X = " (letra X maiúscula) seguido pelo valor da variável X e pelo final de linha
+03- Calcular a área de uma circunferência (area = π . raio2)
+04- Leia dois valores inteiros, no caso para variáveis A e B. A seguir, calcule a soma entre elas e atribua à variável SOMA
+05- Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a média do aluno
+06- Leia 3 valores, no caso, variáveis A, B e C, que são as três notas de um aluno. A seguir, calcule a média do aluno
+07- Leia quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto de A e B pelo produto de C e D
+08- Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário.
+A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+
+09- Faça um programa que leia o nome de um vendedor,
+o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro).
+Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+
+"""
+"""
+print("Hello World")
+
+print("------------------------------")
+
+varX = 10
+print("X = ", varX)
+print("------------------------------")
+area = 3.14
+raio = (2*2) * area
+print("O Raio da circunferência " , raio)
+print("------------------------------")
+
+
+varA = 10
+varB = 20
+soma = varA + varB
+print("A soma entre ", varA, "e ", varB, "é igual a: ", soma)
+print("------------------------------")
+
+notaA = float(8.75)
+notaB = float(3.75)
+media = (notaA + notaB) / 2
+print("A média final do aluno é: ", media)
+print("------------------------------")
+
+notaA = float(8.75)
+notaB = float(3.75)
+notaC = float(3.75)
+media = (notaA + notaB + notaC) / 3
+print("A média final do aluno é: ", media)
+print("------------------------------")
+
+produtoA, produtoB, produtoC, produtoD = 10, 20, 30, 40
+diferenca = (produtoA * produtoB - produtoC * produtoD)
+print("A diferênca entre os produtos A/B E C/D é: ", diferenca)
+
+print("----------------------------------")
+
+funcionario = "001"
+horasTrabalhadas = 168
+salario = 25
+calculoDoSalario = salario * horasTrabalhadas
+print("Funcionário: ", funcionario, "\n","Salário Mês: ", calculoDoSalario)
+print("----------------------------------")
+
+nomeVendedor = "Thiago Barreto Clemente"
+salarioFixo = 2000
+totalDeVendasEmDinheiro = 450
+comissaoDeVendas = totalDeVendasEmDinheiro * 0.15
+totalAReceber = salarioFixo + comissaoDeVendas
+print("Nome funcionário:", nomeVendedor,"\nSalário Mês: ", totalAReceber)
+print("----------------------------------")"""
+
+
+"""x= 5
+print("X", x)
+
+area= 3.14 * 22
+print(area)
+
+a, b =  (2, 8)
+soma= a + b
+print(soma)
+
+nota1, nota2 = float(7), float(8)
+media= nota1 + nota2 /2
+print("notas", nota1,"e", nota2, " ////   média: ", media)
+a, b, c, d=  int(2), int(4), int(6), int(8)
+AB= a*b
+CD= c*d
+resultado= CD - AB
+print(a,  b,    c,     d,     AB,      CD, resultado)
+
+idFunc = 25
+horasTrab = 8
+valorHora = 50
+diasTrab=22
+salario= float(horasTrab * valorHora * diasTrab)
+print("O salário do funcionário",idFunc, "foi o total de : ", salario)
+
+vendedor = str("Rogério")
+vendasEfet = float(75000)
+salFixo = vendasEfet * 0.015
+print(salFixo)"""
+
+# text = """
+#     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+#     Enim maxime doloremque fugiat quae facilis, ab sint. Voluptas excepturi praesentium, alias corporis adipisci hic iste et culpa ab porro sequi magni!
+#     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+#     Corrupti voluptate animi odio quis incidunt voluptates tempora sapiente harum ab quibusdam eaque praesentium iste,
+#     quia numquam vero, eum explicabo pariatur minima.
+#     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+#     Neque corrupti libero suscipit laboriosam veniam a voluptatibus, o
+#     fficiis architecto unde voluptas veritatis asperiores soluta magnam vel alias non at exercitationem vero?
+#
+# """
+
+#SLICING / FATIAR
+# nome = "Thiago Barreto Clemente"
+# print(nome[0:6])
+# print(nome[7:14])
+# print(nome[14:])
+
+#Modify / MODIFICADORES Textos
+
+"""varX = "eu gosto de python"
+varY = "EU ESTOU APRENDENDO PYTHON"
+varZ = "python é vida"
+varV = "    Nessavariavel tem espacamento sobrando     "
+varReplece = "Hello, World!"
+print(varX.upper())
+print(varY.lower())
+print(varZ.capitalize())
+print(varV.strip())
+print(varReplece.replace("Hello", "Seja Bem Vindo"))
+a = "Hello, World!"
+print(a.split(","))
+"""
+# age = 36
+# id = 10
+# txt = "My name is John, and I am {}"
+# print(txt.format(age, id))
+
+
+# nome = "thiago"
+# idUser = 20
+# text = "Vamos imprimir o nome aqui {} imprimir o ID {}"
+# # print("Vamos imprimir o nome aqui ", nome.upper(), " imprimir o ID", idUser)
+# print(text.format(nome.upper(), idUser))
+
+# listaDeDados = ["ID: 001", "Chacall", ["Senha: 12345", "54321"], ["Endereço: Rua 22 Guara 2", ["Apartamento 02"]]]
+
+# print(listaDeDados[0])
+# print(listaDeDados[2][0])
+# print(listaDeDados[3][0])
+# print(listaDeDados[3][1][0])
+# print(len(listaDeDados))
+
+# listaA = ["Anime", "João", "Laranja"]
+# print(listaA)
+# listaA[0] = "OUTRO VALOR"
+# print(listaA)
+
+
+# listaB = ["Letra A","Letra B","Letra C","Letra D"]
+# print(listaB)
+# listaB.append("Letra E")
+# print(listaB)
+
+# listaC = ["Letra A","Letra B","Letra C","Letra D"]
+# print(listaC)
+# listaC.insert(0, "Letra E")
+# print(listaC)
+
+# listaD = ["Letra A","Letra B","Letra C","Letra D"]
+# listaD_01 = ["Letra E", "Letra F"]
+# listaD.extend(listaD_01)
+# print(listaD)
+
+
+# listaE = ["Letra A","Letra B","Letra C","Letra D"]
+# print(listaE)
+# listaE.remove("Letra A")
+# print(listaE)
+
+# listaF = ["Letra A","Letra B","Letra C","Letra D"]
+# print(listaF)
+# listaF.pop(1)
+# print(listaF)
+
+# listaG = ["Letra A","Letra B","Letra C","Letra D"]
+# print(listaG)
+# listaG.clear()
+# print(listaG)
+
+# listaH = ["Letra B","Letra A","Letra D","Letra C"]
+# print(listaH)
+# listaH.sort()
+# print(listaH)
+
+
+
+#TUPLE ou TUPLAS
+
+# tupla = ("apple", "banana", "cherry", "orange", "kiwi")
+# print(tupla)
+# print(len(tupla))
+# print(tupla[0])
+# print(tupla[0:4])
+
+# tupla = ("apple", "banana", "cherry", "orange", "kiwi")
+# modificandoATupla = list(tupla)
+#
+# modificandoATupla[0] = "Egg"
+#
+# tupla = tuple(modificandoATupla)
+# print(tupla)
+
+
+# dicionarios = {
+#   "marca": "Ford",
+#   "modelo": "Mustang",
+#   "ano": 1964
+# }
+#
+# dicionariosA = {
+#     "idUser": "Bolinha22",
+#     "nomePersonagem": "Seu Bolinha",
+#     "Level": "10",
+#     "Dinheiro": 2000
+# }
+#
+# print(dicionariosA["idUser"].upper())
+# print(dicionariosA["nomePersonagem"].lower())
+# print(len(dicionariosA))
+# print(dicionarios)
+
+
+# CONDICIONAIS IF E ELSE
+#
+# seA = 10
+# seB = 20
+#
+# if seB < seA:
+#     print("B é maior que A")
+# else:
+#     print("A é menor que B")
+#
+
+# stringA = "A"
+# stringA_01 = "a"
+# stringB = "b"
+#
+# if stringA == stringA_01.upper():
+#     print("As letras são iguais")
+# else:
+#     print("As letras são diferentes")
+
+# notaA = 7.75
+# notaB = 2.25
+# media = (notaA + notaB) / 2
+#
+# if media > 5:
+#     print("Aluno Aprovado")
+# else:
+#     print("Aluno reprovado")
+
+#
+# menu = 0
+#
+# if menu == 1:
+#     print("Começa jogo")
+# elif menu == 2:
+#     print("Continuar jogo")
+# else:
+#     print("Sair do menu")
+
+# LAÇOS DE REPETIÇÃO
+
+# While
+
+# i = 1 #flag
+# while i < 6:
+#   print(i)
+#   i += 1
+
+# FOR
+
+# listaDeNomes = ["A", "B", "C"]
+#
+# for elementosDentroDaLista in listaDeNomes:
+#   print(elementosDentroDaLista)
+
+# for indice in range(1, 11):
+#   print(indice)
+

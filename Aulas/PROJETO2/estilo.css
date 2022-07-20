@@ -1,0 +1,35 @@
+body{
+	background:#d2d2c1 url('imgs/fundo.png');
+	font: 16px Arial, Helvetica, sans-serif;
+}
+#principal{
+	width: 900px;
+	height: 500px;
+}
+#menu{
+	background: #c5c5b2;
+	padding: 18px;
+}
+a {
+	color: #4b566a;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px; /* espaçamento entre os elementos */
+}
+.top{
+	color: #A4A5A5;
+}
+#conteudo{
+	background: #e8e8d9;
+	font: 14px Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+h2{
+	text-align: center;
+	padding: 5px;
+}
+.publix{
+	height: 300px;
+	width: 500px;
+	border: 7px solid #D8D8D8;
+}
